@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: ghostwhite;
+}
+
+ul,
+ol,
+li {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.container-img-home {
+    height: 300px;
+    width: 100%;
+    background-color: #3b462b;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: var(--bs-card-img-overlay-padding);
+    border-radius: var(--bs-card-inner-border-radius);
+    background: linear-gradient(150deg, black, transparent);
+}
+
+
+.header-nav {
+    height: 100vh;
+    background: linear-gradient(#00000000, #00800069), url(../img/back-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-topo {
+    background: darkseagreen;
+    position: fixed;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.footer-container {
+    background: #198754;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: logo;
+    src: url(../assets/fonts/Cinzel-Bold.otf);
+}
+
+.logo {
+    font-family: logo;
+    font-size: 25px;
+    text-shadow: 0 0 20px black;
+    color: blanchedalmond;
+}
+
+.lista-nav {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+.item-nav-lista {
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin: 0 5px;
+    font-family: 'logo';
+    width: 150px;
+    text-align: center;
+}
+
+.container-titulo {
+    color: white;
+    text-align: center;
+    font-family: 'logo';
+    top: 35%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.a-nav {
+    transition: 1s;
+    color: #ffebcd;
+}
+
+.a-nav:hover {
+    color: #ad8756;
+    transition: 1s;
+}
+
+
+.titulo-principal {
+    font-size: 40px;
+    font-size: 40px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.divisao-header {
+    margin: 1% auto;
+    height: 5px;
+    background: white;
+    border: solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px black;
+    width: 500px;
+
+}
+
+
+.titulo-descricao {
+    font-size: 22px;
+    text-shadow: 1px 1px 10px black;
+    margin: 0%;
+}
+
+.container-saiba-mais {
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-family: 'logo';
+    top: 65%;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    animation: saiba-mais 1s infinite;
+}
+
+@keyframes saiba-mais {
+    0% {
+        top: 65%;
+    }
+
+    50% {
+        top: 64%;
+    }
+
+    100% {
+        top: 65%;
+    }
+}
+
+.redes-sociais {
+    width: 100%;
+}
+
+.text-geral {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sub-titulos {
+    font-weight: 700;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.card {
+    transition: 1s;
+}
+
+@media (max-width: 900px) {
+
+    .header-nav {
+        height: 90vh;
+        width: 125%;
+    }
+
+    .title-topo-mobile {
+        width: 80%;
+        text-align: left;
+    }
+
+    .links-mobile {
+        margin: 0px;
+        text-align: left !important;
+    }
+
+    .titulo-principal {
+        font-size: 20px;
+    }
+
+    .titulo-descricao {
+        font-size: 15px;
+    }
+
+    .container-saiba-mais {
+        bottom: 30%;
+    }
+
+    .mobile-link-pages {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .col-text-geral {
+        flex: 0 0 auto;
+        width: 85%;
+        text-align: center;
+    }
+
+    .divisao-header {
+        width: 309px;
+
+    }
+}
